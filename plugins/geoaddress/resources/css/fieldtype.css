@@ -1,0 +1,7 @@
+.geoaddress-street { margin-bottom: 15px; }
+.geoaddress-city-state-zip { margin-left: -15px; }
+.geoaddress-city-state-zip:after { content: ""; clear: both; display: table; }
+.geoaddress-city-state-zip .field { margin-bottom: 0; margin-top: 0 !important; float: left; padding-left: 15px; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.geoaddress-city-state-zip .field:nth-child(1) { width: 50%; }
+.geoaddress-city-state-zip .field:nth-child(2) { width: 20%; }
+.geoaddress-city-state-zip .field:nth-child(3) { width: 30%; }

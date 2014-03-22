@@ -1,0 +1,43 @@
+{% import "_includes/forms" as forms %}
+
+<div class="geoadress-field" id="{{ fieldName }}-geoadress-field">
+    <div class="geoaddress-street">
+        {{ 
+            forms.textField({
+                id: fieldName ~ '-street',
+                name: fieldName ~ '[street]',
+                value: street,
+                placeholder: "Street" | t,
+            }) 
+        }}
+    </div>
+    <div class="geoaddress-city-state-zip">
+        {{ 
+            forms.textField({
+                id: fieldName ~ '-city',
+                name: fieldName ~ '[city]',
+                class: "geoaddress-city",
+                value: city,
+                placeholder: "City" | t,
+            }) 
+        }}
+        {{ 
+            forms.textField({
+                id: fieldName ~ '-state',
+                name: fieldName ~ '[state]',
+                class: "geoaddress-state",
+                value: state,
+                placeholder: "State" | t,
+            }) 
+        }}
+        {{ 
+            forms.textField({
+                id: fieldName ~ '-zip',
+                name: fieldName ~ '[zip]',
+                class: "geoaddress-zip",
+                value: zip,
+                placeholder: "Zip Code" | t,
+            }) 
+        }}
+    </div>
+</div>
